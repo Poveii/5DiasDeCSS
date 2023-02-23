@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(root, "index.html"),
         day01: resolve(root, "day01", "index.html"),
+        day02: resolve(root, "day02", "index.html"),
       },
     },
   },
