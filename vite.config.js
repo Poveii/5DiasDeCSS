@@ -14,6 +14,7 @@ export default defineConfig({
         day01: resolve(root, "day01", "index.html"),
         day02: resolve(root, "day02", "index.html"),
         day03: resolve(root, "day03", "index.html"),
+        day04: resolve(root, "day04", "index.html"),
       },
     },
   },
