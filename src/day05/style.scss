@@ -1,0 +1,61 @@
+@import "../index.scss";
+
+body,
+input,
+textarea,
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #624cab;
+  color: #f5fbef;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+
+    p {
+      font-size: 1.75rem;
+    }
+
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      user-select: none;
+
+      & > i:hover ~ i::before,
+      & > i:hover::before {
+        content: "\fde2";
+        color: #ffba0a;
+      }
+
+      i {
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        &::before {
+          color: #f5fbef;
+          transition: color 0.2s ease-in, content 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
