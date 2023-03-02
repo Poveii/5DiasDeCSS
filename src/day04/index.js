@@ -45,4 +45,6 @@ document.querySelector("#app").innerHTML = `
       <img src="https://github.com/birobirobiro.png" alt="" />
     </a>
   </div>
+
+  <a href="/" id="backToMenu">Voltar para o menu principal</a>
 `;

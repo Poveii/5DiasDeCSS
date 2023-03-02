@@ -24,4 +24,6 @@ document.getElementById("app").innerHTML = `
       </a>
     </li>
   </ul>
+
+  <a href="/" id="backToMenu">Voltar para o menu principal</a>
 `;

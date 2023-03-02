@@ -6,4 +6,6 @@ document.querySelector("#app").innerHTML = `
   <div>
     <button type="button">Hover here</button>
   </div>
+  
+  <a href="/" id="backToMenu">Voltar para o menu principal</a>
 `;

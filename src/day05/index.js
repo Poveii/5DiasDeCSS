@@ -14,4 +14,6 @@ document.querySelector("#app").innerHTML = `
       <i class="ph-star"></i>
     </div>
   </main>
+
+  <a href="/" id="backToMenu">Voltar para o menu principal</a>
 `;
