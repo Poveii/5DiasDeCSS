@@ -1,0 +1,86 @@
+@import "./index.scss";
+
+body,
+input,
+textarea,
+button {
+  font-family: "Golos Text", sans-serif;
+}
+
+body {
+  background-color: #5863f8;
+  color: #000009;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.125rem;
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 420px));
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    flex: 1;
+
+    padding-inline: 1.5rem;
+    margin-top: 1.75rem;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding-bottom: 0.5rem;
+
+      background-color: #e2c044;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease-out;
+
+      &:hover {
+        transform: scale(1.04);
+      }
+
+      a {
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 1.75rem;
+  }
+}
